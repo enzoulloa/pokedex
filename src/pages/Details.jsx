@@ -38,7 +38,7 @@ const Details = () => {
       <div className=' bg-white m-1 p-2 rounded-lg w-[90%]'>
         <div className='w-full m-1 p-2'>
           <h3 className=' font-bold text-lg'>Base Stats</h3>
-          <BaseStats pokemon={pokemonIdQuery} backgroundSelected={typeColor} />
+          <BaseStats pokemon={pokemonIdQuery.data} backgroundSelected={typeColor} />
         </div>
       </div>
     </div>

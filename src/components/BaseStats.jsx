@@ -1,10 +1,10 @@
 
 export const BaseStats = ({ pokemon, backgroundSelected }) => {
   const maxStat = 255
+  console.log(pokemon)
   return (
     <div className='w-full flex flex-col my-1 '>
-      {/* @ts-ignore */}
-      {pokemon.data?.stats?.map((stat) => {
+      {pokemon?.stats?.map((stat) => {
         const widthStat = (stat.base_stat / maxStat * 100)
         return (
           <div key={stat.stat.name} className=' w-full flex flex-col items-center justify-center'>
