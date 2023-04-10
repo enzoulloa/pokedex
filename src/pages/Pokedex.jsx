@@ -1,6 +1,10 @@
+import CardList from '../components/CardList'
+
 const Pokedex = () => {
   return (
-    <h1>pokedex</h1>
+    <section className=' mt-32'>
+      <CardList />
+    </section>
   )
 }
 export default Pokedex
