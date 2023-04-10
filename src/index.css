@@ -30,6 +30,15 @@
   --water: #6493eb;
 }
 
+.legendaries {
+  background: rgb(249, 223, 123);
+  background: linear-gradient(
+    0deg,
+    rgba(249, 223, 123, 1) 0%,
+    rgba(181, 126, 16, 1) 100%
+  );
+}
+
 .grass {
   background: var(--grass);
   /* border: 2px solid var(--grass);

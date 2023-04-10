@@ -32,7 +32,7 @@ const Legendaries = () => {
         allPokemonQuery.data?.map((pokemon, id) => {
           return (
             <div key={id} className=' snap-center shrink-0 overflow-hidden' onClick={() => handleClick(id)}>
-              <div className='legendarie'>
+              <div className='legendaries'>
                 <img src={pokemon.data?.sprites.other['official-artwork'].front_default} alt='' />
                 <h3>{pokemon.data?.name}</h3>
               </div>
