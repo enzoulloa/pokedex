@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Card = ({ pokemon }) => {
   const typeColor = pokemon.types[0].type.name
   return (
-    <Link to={`/${pokemon.id}`} relative='route'>
+    <Link to={`/pokemon/${pokemon.id}`} relative='route'>
       <article className=' relative my-4 p-10 m-3 shadow-lg rounded-lg border border-gray-300 transition hover:scale-105'>
         <img className='mx-auto object-contain mt-3 w-full' src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name} />
         <div className=' absolute top-0 left-0 flex items-center justify-around w-full py-3 '>

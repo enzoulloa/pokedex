@@ -12,8 +12,8 @@ function Router () {
         <Layout>
           <Routes>
             <Route exact path='/' element={<Pokedex />} />
-            <Route path='/:id' element={<Details />} />
-            <Route exact path='/' element={<Navigate to='/rotomdex' />} />
+            <Route path='/pokemon/:id' element={<Details />} />
+            <Route exact path='/' element={<Navigate to='/' />} />
             <Route exact path='/legendaries' element={<Legendaries />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
