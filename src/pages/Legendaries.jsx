@@ -20,21 +20,21 @@ const Legendaries = () => {
   }
 
   return (
-    <section className='w-full mt-24'>
-      <h1 className=''>Legendaries Pokemon</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, sit placeat. Nihil minima similique veniam architecto dolore deleniti doloremque a necessitatibus, voluptatibus ipsa nisi alias, ratione culpa optio, magni quo.</p>
+    <section className='w-full'>
+      <h1 className=' text-5xl font-semibold max-w-[620px] mx-auto'>Legendaries Pokemon</h1>
+      <p className=' my-4 text-[16px] max-w-[620px] mx-auto font-medium leading-6 '>Legendary Pokémon are a group of incredibly rare and often very powerful Pokémon, generally featured prominently in the legends and myths of the Pokémon world.
+      </p>
       {
         pokemonData.length > 0 ? <SelectedPokemon selectedPokemon={selectedPokemon} /> : null
       }
-      {/* <SelectedPokemon selectedPokemon={allPokemonQuery.data ? selectedPokemon : null} /> */}
       <div className=' flex gap-4 snap-mandatory scroll-p-3 overflow-x-auto scroll-smooth justify-start items-center'>
         {
         allPokemonQuery.data?.map((pokemon, id) => {
           return (
-            <div key={id} className=' snap-center shrink-0 overflow-hidden' onClick={() => handleClick(id)}>
-              <div className='legendaries'>
-                <img src={pokemon.data?.sprites.other['official-artwork'].front_default} alt='' />
-                <h3>{pokemon.data?.name}</h3>
+            <div key={id} className=' snap-center shrink-0 overflow-hidden rounded-lg ' onClick={() => handleClick(id)}>
+              <div className='legendaries text-center'>
+                <img className=' w-40' src={pokemon.data?.sprites.other['official-artwork'].front_default} alt='' />
+                <h3 className=' capitalize font-semibold'>{pokemon.data?.name}</h3>
               </div>
             </div>
           )
