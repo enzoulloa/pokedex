@@ -11,7 +11,7 @@ const Details = () => {
   const typeColor = pokemonIdQuery.data?.types[0].type.name
 
   if (pokemonIdQuery.isError) {
-    navigate('/')
+    navigate('/notFound')
   }
 
   return (
